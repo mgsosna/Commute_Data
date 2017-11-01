@@ -88,7 +88,7 @@
   
   for(i in 1:length(files)){
     
-    if(rows[i] > 50)
+    if(rows[i] > 50){
       
       data <- read.csv(files[i], header = T)
     
@@ -102,7 +102,8 @@
     
     # Speeds
     speeds[i, 1:length(data$speed)] <- data$speed
-    
+      
+    }
   }
   
   # Remove tracking error in speeds
