@@ -4,7 +4,11 @@
 #
 # Matt Grobis | Nov 2017
 ############################################################################################
- setwd("C:/Users/mmgro_000/Desktop/GPS data")
+# Before we get started, you'll need to download the GPS data from your phone onto your 
+# computer. I've saved the files (which are .CSVs) into a folder called "GPS data" on my
+# Desktop.
+
+  setwd("C:/Users/mmgro_000/Desktop/GPS data")
   
   # 1. Exclude accidents (turning on GPS on accident)
   files <- list.files(pattern = ".csv")
