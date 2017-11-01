@@ -135,7 +135,7 @@
        las = 1, cex.axis = 1.2, main = "How long it took to walk to work", 
        cex.main = 1.7, cex.lab = 1.4)  
   
-  plot(h2, main = "My walking speed", xlab = "Commuting speed (m/s)", 
+  plot(sp.hist, main = "My walking speed", xlab = "Commuting speed (m/s)", 
        font.lab = 2, ylim = c(0, 0.25), font.axis = 2, col = walk.cols, 
        las = 1, cex.lab = 1.5, xlim = c(0, 3), cex.main = 1.7, cex.axis = 1.2, 
        ylab = NA)
