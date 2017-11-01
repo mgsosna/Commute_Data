@@ -1,7 +1,7 @@
 # Visualizing my daily commute
 
 ## Introduction and Methods
-I love data visualization, and one holiday my partner surprised me with the book [_Dear Data_](http://www.dear-data.com/). The book is a series of weekly letters two data analysts wrote to one another with visualizations of data on random topics. One week they tracked the number of times they said "thank you," for example; another weeek, they counted the number of times they looked at a clock. In their letters, they visualized their data. One of the most interesting parts of the book was seeing how differently they could plot the same type of data. 
+I love data visualization, and one holiday my partner surprised me with the book [_Dear Data_](http://www.dear-data.com/). The book is a series of weekly letters two data analysts wrote to one another with visualizations of data on random topics. One week they tracked the number of times they said "thank you," for example; another week, they counted the number of times they looked at a clock. In their letters, they visualized their data. One of the most interesting parts of the book was seeing how differently they could plot the same type of data. 
 
 Some friends and I decided to take a stab at it ourselves: for three weeks, we collected data about transportation and travel. I decided to quantify my walks to work. I used the [GPS Logger for Android](https://play.google.com/store/apps/details?id=com.mendhak.gpslogger&hl=en) app to get 1 Hz time series data for 44 commutes. Data collection began the moment I left my apartment building or work, and ended when I touched the door handle of my destination.
 
