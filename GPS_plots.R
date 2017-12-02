@@ -47,9 +47,9 @@
   library(ggplot2)
   
   # Get the Google Maps GPS image  
-  dc <- get_map(location = c(lat = mean(trajectories[, 1, ], na.rm = T),
-                             lon = mean(trajectories[, 2, ], na.rm = T)), 
-                zoom = 18) 
+  loc <- get_map(location = c(lat = mean(trajectories[, 1, ], na.rm = T),
+                              lon = mean(trajectories[, 2, ], na.rm = T)), 
+                 zoom = 18) 
   
   # For ggplot, we need a data frame    
   lat <- as.vector(trajectories[, 1, ])
@@ -69,12 +69,12 @@
   # The actual plots:
   
   # Simple plot
-  ggmap(dc) + geom_point(data = df, aes(x = lon, y = lat), alpha = 0.3, 
-                         col = "deepskyblue4")
+  ggmap(loc) + geom_point(data = df, aes(x = lon, y = lat), alpha = 0.3, 
+                          col = "deepskyblue4")
   
   
   # Binned and colored by speed
-  ggmap(dc) + 
+  ggmap(loc) + 
     stat_summary_2d(data = df, aes(x = lon, y = lat, z = sp), bins = 180) +
     scale_fill_gradient(low = "black", high = "green", 
                         guide = guide_legend(title = "Speed (m/s)"))
